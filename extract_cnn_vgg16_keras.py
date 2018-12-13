@@ -13,7 +13,7 @@ class VGGNet:
         # weights: 'imagenet'
         # pooling: 'max' or 'avg'
         # input_shape: (width, height, 3), width and height should >= 48
-        self.input_shape = (224, 224, 3)
+        self.input_shape = (1000, 1000, 3)
         self.weight = 'imagenet'
         self.pooling = 'max'
         self.model = VGG16(weights = self.weight, input_shape = (self.input_shape[0], self.input_shape[1], self.input_shape[2]), pooling = self.pooling, include_top = False)
